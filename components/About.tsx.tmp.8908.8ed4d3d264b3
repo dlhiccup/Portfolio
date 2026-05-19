@@ -1,0 +1,61 @@
+'use client'
+
+import { motion } from 'motion/react'
+
+export function About() {
+  return (
+    <motion.section
+      initial={{ opacity: 0, y: 18 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-80px' }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      className="max-w-3xl mx-auto px-6 pb-16"
+    >
+      <div className="relative rounded-xl border border-edge bg-surface overflow-hidden">
+        {/* Subtle corner accent */}
+        <div
+          aria-hidden="true"
+          className="absolute top-0 right-0 w-[260px] h-[180px] pointer-events-none"
+          style={{
+            background:
+              'radial-gradient(ellipse at 80% 0%, rgba(228,180,90,0.07) 0%, transparent 70%)',
+          }}
+        />
+
+        <div className="relative p-8 md:p-10">
+          <div className="flex items-center gap-2 mb-6">
+            <span className="font-mono text-[11px] text-gold tracking-widest uppercase">
+              About
+            </span>
+          </div>
+
+          <div className="space-y-4 max-w-[62ch]">
+            <p className="text-ink leading-[1.75] text-[15.5px]">
+              I'm a software engineer based in Houston, TX. I moved here from
+              Ukraine in 2019, learned English at ELS Language Centers, and
+              taught myself to code through online courses and projects that
+              mostly didn't work — until they did.
+            </p>
+            <p className="text-muted leading-[1.75] text-[15.5px]">
+              My first engineering job was in 2021. Since then I've worked
+              across a consulting firm, an open-source messaging platform, and
+              an AI infrastructure startup. The thread connecting all of it is
+              backend systems — the kind that have to stay up, handle load, and
+              fail gracefully when they can't.
+            </p>
+            <p className="text-muted leading-[1.75] text-[15.5px]">
+              I care about the parts of a system that users never see: the
+              queue that doesn't lose work, the cache invalidation that actually
+              holds, the observability that makes 3am incidents shorter. Go is
+              my primary language. Distributed systems are where I feel most at
+              home. I'm currently building a SaaS of my own and looking for the
+              next full-time remote role.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-16 border-t border-edge" />
+    </motion.section>
+  )
+}
