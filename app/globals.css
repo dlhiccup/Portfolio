@@ -24,8 +24,8 @@
   --ink: #efefef;
   --muted: #707070;
   --faint: #2c2c2c;
-  --gold: #e4b45a;
-  --gold-dim: rgba(228, 180, 90, 0.15);
+  --gold: #38bdf8;
+  --gold-dim: rgba(56, 189, 248, 0.15);
 }
 
 /* ── Light ───────────────────────────────────────────────────── */
@@ -37,8 +37,8 @@ html.light {
   --ink: #111110;
   --muted: #777470;
   --faint: #cdc9c0;
-  --gold: #a06b10;
-  --gold-dim: rgba(160, 107, 16, 0.12);
+  --gold: #0284c7;
+  --gold-dim: rgba(2, 132, 199, 0.12);
 }
 
 /* ── Reset / Base ────────────────────────────────────────────── */
@@ -87,14 +87,14 @@ html.light body::after {
 
 /* ── Gradient text utility ───────────────────────────────────── */
 .text-gradient {
-  background: linear-gradient(135deg, #e4b45a 0%, #f5d48e 60%, #e4b45a 100%);
+  background: linear-gradient(135deg, #38bdf8 0%, #7dd3fc 60%, #38bdf8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 html.light .text-gradient {
-  background: linear-gradient(135deg, #a06b10 0%, #c8880e 60%, #8a5a0c 100%);
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 60%, #075985 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -147,11 +147,11 @@ html.light .text-gradient {
   height: 1px;
   width: 40px;
   flex-shrink: 0;
-  background: linear-gradient(to right, rgba(228,180,90,0.5), transparent);
+  background: linear-gradient(to right, rgba(56,189,248,0.5), transparent);
 }
 
 html.light .section-label::before {
-  background: linear-gradient(to right, rgba(160,107,16,0.5), transparent);
+  background: linear-gradient(to right, rgba(2,132,199,0.5), transparent);
 }
 
 /* ── Scrollbar ───────────────────────────────────────────────── */
